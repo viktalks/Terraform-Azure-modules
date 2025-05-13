@@ -49,6 +49,10 @@
   waf_name             = "vik-waf-policy"
   blocked_ip           = ["192.168.1.1", "203.0.113.5"]
   waf_mode             = "Prevention"
-}
 
 
+# Data_disk
+data_disk_replication_type = "Standard_LRS"
+data_disk_size = 30
+datadisk_name = "my-datadisk-1"
+  }

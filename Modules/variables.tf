@@ -92,6 +92,8 @@ variable "app_gateway_sku_tier" {
   type = string
 }
 
+#============================================= > WAF <======================================
+
 variable "waf_name" {
   description = "The name of the WAF"
   type        = string
@@ -106,4 +108,17 @@ variable "waf_mode" {
   description = "WAF mode - either 'Detection' or 'Prevention'"
   type        = string
  
+}
+
+variable "data_disk_replication_type" {
+ description = "Define whether Standard_LRS,ZRS,GRS...."
+ type = string
+}
+variable "data_disk_size" {
+  description = "Deine the size of data disk ikn GB"
+  type = number
+}
+variable "datadisk_name" {
+  description = "The name of the Data disk"
+  type = string
 }

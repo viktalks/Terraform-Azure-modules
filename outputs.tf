@@ -38,6 +38,12 @@ output "waf_details" {
   description = "WAF name and mode from infra module"
 }
 
+# ==================================> Output: Data Disk Details <=================================
+
+output "datadisk_details" {
+  description = "Details of the managed data disk from module"
+  value       = module.infra.datadisk_details
+}
 
 
 

@@ -51,3 +51,15 @@ output "waf_configuration" {
   description = "WAF policy configuration including name and mode"
 }
 
+# ==================================> Output: Combined Data Disk Details <=================================
+
+output "datadisk_details" {
+  description = "Combined details of the managed data disk"
+  value = {
+    name           = azurerm_managed_disk.data_disk.name
+    size_in_gb     = azurerm_managed_disk.data_disk.disk_size_gb
+    storage_type   = azurerm_managed_disk.data_disk.storage_account_type
+  }
+}
+
+
