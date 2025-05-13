@@ -1,0 +1,16 @@
+# Ignore a specific file
+provider.tf
+
+# Ignore Terraform folders and files
+.terraform/
+*.tfstate
+*.tfstate.*
+*.backup
+*.log
+*.tfvars
+*.lock.hcl
+
+# Ignore executables and large files
+*.exe
+*.zip
+*.tar.gz
